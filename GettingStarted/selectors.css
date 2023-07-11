@@ -1,0 +1,23 @@
+
+.tutorial {
+    background-color: aqua;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    margin: 1%;
+}
+.tutorial, h1{
+    border: solid 1px  black;
+}
+.tutorial > p{
+    font-size: 1.2em;  
+}
+
+#tutorial-1 img{
+    width: 150px;
+    height: 150px;
+}
+#tutorial-2 img{
+    width: 100px;
+    height: 100px;
+}

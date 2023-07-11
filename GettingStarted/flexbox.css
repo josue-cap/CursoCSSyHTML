@@ -1,0 +1,16 @@
+body {
+    background-color: aqua;
+}
+.main {
+    border: solid 2px black;
+    background-color: azure;
+    display: flex;
+}
+.main > div {
+    border: solid 5px gray;
+    flex: 1;
+    text-align: center;
+}
+.main > div:nth-child(2){
+    flex: 2;
+}
