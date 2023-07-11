@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul style="display: flex;">
+            <ul>
                 <li><img src="images/logo.png" width="150" height="47" alt="Bethany's Pie Shop company logo" /></li>
                 <li><a href="pies.html">Pies</a></li>
                 <li><a href="about.html">About</a></li>
@@ -37,44 +38,48 @@
                 You are now looking at the result of this: our very own online store, making it possible to 
                 order Bethany's delicious pies whenever you feel like it!
             </p>
+            <div id="contenedor-calculadora">
+                <div id="calculator"><h2>Order Calculator</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apple</td>
+                                <td>$12.00</td>
+                                <td><input type="number" id="apple" min="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Cherry</td>
+                                <td>$15.00</td>
+                                <td><input type="number" id="cherry" min="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Strawberry</td>
+                                <td>$18.00</td>
+                                <td><input type="number" id="strawberry" min="0"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Total:</td>
+                                <td id="total-container">$0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </article>
         <aside>
-            <div>
+            <div class="logo-container">
                 <img width="120" height="140" src="images/bethanylogo.png" alt="Bethany's pie Shop logo" />
             </div>
         </aside>
-        <div id="calculator"><h2>Order Calculator</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Apple</td>
-                    <td>$12.00</td>
-                    <td><input type="number" id="apple" min="0"></td>
-                </tr>
-                <tr>
-                    <td>Cherry</td>
-                    <td>$15.00</td>
-                    <td><input type="number" id="cherry" min="0"></td>
-                </tr>
-                <tr>
-                    <td>Strawberry</td>
-                    <td>$18.00</td>
-                    <td><input type="number" id="strawberry" min="0"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Total:</td>
-                    <td id="total-container">$0.00</td>
-                </tr>
-            </tbody>
-        </table></div>
+        
     </main>
     <footer>
         <address>
@@ -85,5 +90,6 @@
         <p>All rights reserved &copy; Bethany's Pie Shop</p>
         <p>Contact us via <a href="mailto:josue.alvarado.cap@gmail.com">email</a>.</p>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
